@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=1;i<=15;i++){
+        var nombre=prompt("Nombre:")
+        var compra=parseFloat(prompt("Valor de compra"))
+        var model=prompt("Model Pc: A1,A2 o A3")
+        var tarjeta=prompt("Pago con tarjeta: SI o NO")
+    
+        switch(model){
+            case  "A1": document.write(`<h1>Computadoras y Mas</h1><br>`)
+                        document.write(`<h2>Factura #${i}</h2><br>`)
+                        document.write(`<strong><p>Nombre del Cliente: ${nombre}</p></strong><br>`)
+                        document.write(`<strong><p>Modelo Pc: ${model}</p></strong><br>`)
+                        document.write(`<strong><p>Compra: ${compra}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento: ${compra*0.10}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento de Tarjeta: ${tarjeta}</p></strong><br>`)
+                        if(tarjeta.toUpperCase()==="SI"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${compra-(compra*0.05)}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.15)}</p></strong><br>`)
+                        }else if(tarjeta.toUpperCase()==="NO"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${0}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.10)}</p></strong><br>`)
+                        }break
+            case  "A2": document.write(`<h1>Computadoras y Mas</h1><br>`)
+                        document.write(`<h2>Factura #${i}</h2><br>`)
+                        document.write(`<strong><p>Nombre del Cliente: ${nombre}</p></strong><br>`)
+                        document.write(`<strong><p>Modelo Pc: ${model}</p></strong><br>`)
+                        document.write(`<strong><p>Compra: ${compra}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento: ${compra*0.15}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento de Tarjeta: ${tarjeta}</p></strong><br>`)
+                        if(tarjeta.toUpperCase()==="SI"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${compra-(compra*0.05)}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.20)}</p></strong><br>`)
+                        }else if(tarjeta.toUpperCase()==="NO"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${0}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.15)}</p></strong><br>`)
+                        }break
+            case  "A3": document.write(`<h1>Computadoras y Mas</h1><br>`)
+                        document.write(`<h2>Factura #${i}</h2><br>`)
+                        document.write(`<strong><p>Nombre del Cliente: ${nombre}</p></strong><br>`)
+                        document.write(`<strong><p>Modelo Pc: ${model}</p></strong><br>`)
+                        document.write(`<strong><p>Compra: ${compra}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento: ${compra*0.20}</p></strong><br>`)
+                        document.write(`<strong><p>Descuento de Tarjeta: ${tarjeta}</p></strong><br>`)
+                        if(tarjeta.toUpperCase()==="SI"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${compra-(compra*0.05)}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.25)}</p></strong><br>`)
+                        }else if(tarjeta.toUpperCase()==="NO"){
+                        document.write(`<strong><p>Descuento de Tarjeta: ${0}</p></strong><br>`)
+                        document.write(`<strong><p>Total Pagar: ${compra-(compra*0.20)}</p></strong><br>`)
+                        }break
+            
+
+        }
+    }
+    </script>
+    
+</body>
+</html>
